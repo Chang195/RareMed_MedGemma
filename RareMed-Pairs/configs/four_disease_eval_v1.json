@@ -1,0 +1,19 @@
+{
+  "version": "three-disease-extraction-v1",
+  "per_disease_per_dataset": 3,
+  "seed": "20261027",
+  "diseases": {
+    "CADASIL": "\\bCADASIL\\b|cerebral autosomal dominant arteriopathy",
+    "multiple_sclerosis": "\\bmultiple sclerosis\\b",
+    "NMOSD": "neuromyelitis optica|\\bNMOSD\\b|\\bDevic(?:'s)?\\b"
+  },
+  "selection_note": "Case-text disease mentions are sampling strata, not confirmed diagnoses. Keep all cases and figures in each selected document. No replacement for missing diseases.",
+  "unit": "original Figure; no panel splitting",
+  "tasks": [
+    "brain_mri_selection",
+    "figure_case_link",
+    "figure_caption_pair",
+    "author_diagnosis"
+  ],
+  "review_requirement": "Public automatic case associations are silver references. Four-task ground truth requires independent verification."
+}

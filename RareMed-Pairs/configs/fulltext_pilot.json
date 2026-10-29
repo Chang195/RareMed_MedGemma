@@ -1,0 +1,6 @@
+{
+  "run_id": "fulltext_pilot_3",
+  "screened_manifest": "data/manifests/brain_mri_discovery_200_screened.jsonl",
+  "queue": "priority_fulltext_review",
+  "max_articles": 3
+}

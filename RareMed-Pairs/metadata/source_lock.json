@@ -1,0 +1,54 @@
+{
+  "MedPix_revision": "d3bc431576ec8041114806ec3eb58d75adf45029",
+  "MultiCaRe_DOI": "10.5281/zenodo.14994046",
+  "files": [
+    {
+      "destination": "data/benchmarks/four_disease/sources/medpix_cases.json",
+      "url": "https://raw.githubusercontent.com/CHILab1/MedPix-2.0/d3bc431576ec8041114806ec3eb58d75adf45029/MedPix-2-0/Case_topic.json",
+      "sha256": "b9ef5fc1100e7fa94d4cdc82fc18b9db0397be0093ede77c3627dccb0aff9d85",
+      "bytes": 3101414
+    },
+    {
+      "destination": "data/benchmarks/four_disease/sources/medpix_images.json",
+      "url": "https://raw.githubusercontent.com/CHILab1/MedPix-2.0/d3bc431576ec8041114806ec3eb58d75adf45029/MedPix-2-0/Descriptions.json",
+      "sha256": "6dac623d397c7ff419db7693b0c4d4aeca714684c54f018e31df43d2634df2af",
+      "bytes": 1269639
+    },
+    {
+      "destination": "data/benchmarks/four_disease/sources/multicare_cases.parquet",
+      "url": "https://zenodo.org/api/records/14994046/files/cases.parquet/content",
+      "sha256": "77a57ecc50bb6dc2037e397e64388824fe01ce212d4172ec341b3950921116ec",
+      "bytes": 158654022
+    },
+    {
+      "destination": "data/benchmarks/four_disease/sources/multicare_images.parquet",
+      "url": "https://zenodo.org/api/records/14994046/files/case_images.parquet/content",
+      "sha256": "a41de3aa349541fc99b8b87cdbb81b40500069bc011ac663b673b96b92f48af6",
+      "bytes": 52043470
+    },
+    {
+      "destination": "data/benchmarks/four_disease/sources/multicare_captions_and_labels.csv",
+      "url": "https://zenodo.org/api/records/14994046/files/captions_and_labels.csv/content",
+      "sha256": "3f3724351f6070bae95ca925c7f9f63ca4752fa637ad6a6df645ca25855a5490",
+      "bytes": 49207468
+    },
+    {
+      "destination": "data/benchmarks/four_disease/sources/multicare_data_dictionary.csv",
+      "url": "https://zenodo.org/api/records/14994046/files/data_dictionary.csv/content",
+      "sha256": "e5b57d2319a952f16e1f51b4794a57ee9edda8f531a679a8d2bd8e0bbcbd14e5",
+      "bytes": 6405
+    },
+    {
+      "destination": "data/benchmarks/four_disease/sources/multicare_record.json",
+      "bundled_metadata": "metadata/multicare_record.json",
+      "sha256": "b437497a18e5f4ad82d9a3593ed01a49409b82e0e65f91d2b20b23fe3a70ca6d",
+      "bytes": 8607
+    },
+    {
+      "destination": "assets/plotly-2.35.2.min.js",
+      "url": "https://cdn.plot.ly/plotly-2.35.2.min.js",
+      "sha256": "6d21266ce1bd7d9e5ab4e115989c70c20de0382fd973a8f26ab58619eba4d603",
+      "bytes": 4558696
+    }
+  ]
+}

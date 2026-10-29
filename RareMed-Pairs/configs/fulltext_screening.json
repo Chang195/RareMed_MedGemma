@@ -1,0 +1,4 @@
+{
+  "run_id": "brain_mri_fulltext_v2",
+  "metadata_manifest": "data/manifests/brain_mri_discovery_1000_screened_v2.jsonl"
+}

@@ -1,0 +1,14 @@
+{
+  "planned_figures": 1946,
+  "inference_status": {
+    "validated": 1850,
+    "validation_failed": 96
+  },
+  "validated_figures": 1850,
+  "description_parsed_figures": 1834,
+  "description_held_documents": 33,
+  "classification_policy": "all astrocytoma subtypes; three target classes plus Other and Unresolved",
+  "source_manifest_sha256": "8a065b4321327d7cf50a8d7b725a4227bf4ccdf4a551e3d513f302f143345bed",
+  "reference_sha256": "8e861cf660907c886a0821b44f76ac3a96a29785284fe13fdc67ddb85b69a512",
+  "warning": "MultiCaRe MRI target is HEAD MRI, not exact brain MRI; MultiCaRe disease strata are mentions, not verified diagnoses. MedPix description is adapter integrity. No new image model or raw image interpretation."
+}

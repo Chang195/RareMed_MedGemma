@@ -1,0 +1,506 @@
+{
+  "acquire_screened.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "collect.py"
+    ],
+    "sha256": "0a6933bf3bd98bf6946fbce2b835e68a8e1bd147fca29d9cb200198366959eca"
+  },
+  "audit_licenses.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "collect.py",
+      "license_rules.py"
+    ],
+    "sha256": "f9814dcff21270099f06cefdebb8a4928de5ab6603b0ab5886e4b2cedd1ef94d"
+  },
+  "build_caption_pilot.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "medcpt_local.py"
+    ],
+    "sha256": "784ecb239fbe960b6a5c7e7f75b375bc3a18a137ff9c2860b9493058a73dc294"
+  },
+  "build_diagnosis_candidates.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "inventory_dataset.py",
+      "medcpt_local.py"
+    ],
+    "sha256": "112f17ef1fa4ac88d9ca87a9ed0302dbc8c6f6bc2e9457e14c0e680c026f86d8"
+  },
+  "collect.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "license_rules.py"
+    ],
+    "sha256": "b98506da3db1d9430bdaf27b797ddc51ee00b022a7435ba8d75c759c51061d38"
+  },
+  "count_multicare_mri.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "medcpt_local.py"
+    ],
+    "sha256": "fb68c3c71abaeaf4f798c5fde84f0011cba521639b522f548ab2cf53939b0ecf"
+  },
+  "dataset_leakage.py": {
+    "role": "internal_dependency",
+    "dependencies": [],
+    "sha256": "536132160d15cf64d16f7b6b9f144ac6ff08c7f83ee6eda08245aae15c2fe0b8"
+  },
+  "dedup_leakage.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "dataset_leakage.py",
+      "inventory_dataset.py",
+      "medcpt_local.py"
+    ],
+    "sha256": "bd9fd501e11de5a8be10208689b1df44dab928df18499966b5152f2de591efd6"
+  },
+  "evaluate_curation.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "inventory_dataset.py",
+      "medcpt_local.py",
+      "preview_dataset.py"
+    ],
+    "sha256": "89ad93e7fbcc89f6f30ced9105d3ab2796e1b074390716d6be5043fc1447f11b"
+  },
+  "evaluate_requested_tasks.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "collect.py",
+      "dedup_leakage.py",
+      "evaluate_curation.py",
+      "four_disease_eval.py",
+      "global_three_disease_eval.py",
+      "medcpt_local.py",
+      "plot_requested_task_matrices.py",
+      "task_benchmark_suite.py"
+    ],
+    "sha256": "1d1ec1bb4919a99402cea95f9289f72e34d5e8aaa26a608e0dcffe9d27c167cd"
+  },
+  "evidence_rules.py": {
+    "role": "internal_dependency",
+    "dependencies": [],
+    "sha256": "ae489520cfb69d2eb7b061a6661134701d7ffb2b8d7ae3aab2ff478bf1416ce0"
+  },
+  "export_diagnosis_sft.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "build_caption_pilot.py",
+      "dataset_leakage.py",
+      "dedup_leakage.py",
+      "medcpt_local.py"
+    ],
+    "sha256": "8325f93a39dbc0c04fa1cb42b7f0d48814da12ddcbfcf73fecd84e0854bd14e0"
+  },
+  "extraction_format.py": {
+    "role": "internal_dependency",
+    "dependencies": [],
+    "sha256": "40135c73c8dddf716c3350b4c37dac6d70c50e6c99013cb490d03f54b414378e"
+  },
+  "four_disease_eval.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "collect.py",
+      "dataset_leakage.py",
+      "dedup_leakage.py",
+      "evaluate_curation.py",
+      "extraction_format.py",
+      "inventory_dataset.py",
+      "link_cases.py",
+      "medcpt_local.py",
+      "preview_dataset.py",
+      "run_deepseek.py"
+    ],
+    "sha256": "126d7ab6c442c9b951806bf5385494a659da25bf34edc788fc340e58d3334f38"
+  },
+  "global_three_disease_eval.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "dedup_leakage.py",
+      "extraction_format.py",
+      "link_cases.py",
+      "medcpt_local.py",
+      "run_deepseek.py",
+      "task_benchmark_suite.py"
+    ],
+    "sha256": "fee649e0d5025e0a7f0fd103f8d3d2f1383bdda1506c55432676aa223c982551"
+  },
+  "inventory_dataset.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "medcpt_local.py",
+      "preview_dataset.py"
+    ],
+    "sha256": "81c46e82de5d44dc6a01809b198776a10b4b6a40021851902f83ac1dfb309df9"
+  },
+  "license_rules.py": {
+    "role": "internal_dependency",
+    "dependencies": [],
+    "sha256": "f872646edcbd904e22745ddd96a1fe1fbd7b691e3a4431fe8c4cde45d7bc8d66"
+  },
+  "link_cases.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "collect.py"
+    ],
+    "sha256": "36e9dfb60404b44bbf7191867585998dff59486392fe0348d32a60cfe391264e"
+  },
+  "medcpt_batch.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "medcpt_local.py"
+    ],
+    "sha256": "74f8fd8e7a4754cf2228c465db614284c4f994b9d1135d363f5a6400432a5ad6"
+  },
+  "medcpt_batch_v2.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "evidence_rules.py",
+      "medcpt_batch.py",
+      "medcpt_local.py"
+    ],
+    "sha256": "f6f83d1f9a9be7c68f63c237705ab043c4d934b6cde6ab2c582395cd2deec806"
+  },
+  "medcpt_local.py": {
+    "role": "entrypoint",
+    "dependencies": [],
+    "sha256": "b10775c936477004bb6935c3a4dd4659e3fd3f946d0c96f4267b743ac0bb2238"
+  },
+  "medpix_glioma_eval.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "dedup_leakage.py",
+      "medcpt_local.py",
+      "task_benchmark_suite.py"
+    ],
+    "sha256": "c1fb120d5376c1b54d5daa3e410c77ce044399ba69a0aaa2b00d903622d3fee6"
+  },
+  "orphadata_kg.py": {
+    "role": "entrypoint",
+    "dependencies": [],
+    "sha256": "d2a59061e0fd0be4e6604fdc8f30676983e9220ef829186eaab71491780073aa"
+  },
+  "package_candidates.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "collect.py",
+      "link_cases.py"
+    ],
+    "sha256": "d6c42ffa3317a0fef2a547a6ad2b0c83be965efea6fe7950990b461fb662fcec"
+  },
+  "plot_article_flow.py": {
+    "role": "entrypoint",
+    "dependencies": [],
+    "sha256": "824b0d45a5f8906e3c29ed1bda52e8e2a20bd5f81e1d70212c5cf90a4bc0cf0c"
+  },
+  "plot_dataset_flow.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "medcpt_local.py"
+    ],
+    "sha256": "2b781691ac2710b525aed7ae768be8a688b05a590fb99ce31cacf99ef6fb7f43"
+  },
+  "plot_diagnosis_splits.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "dedup_leakage.py",
+      "medcpt_local.py"
+    ],
+    "sha256": "fe59ba6f3da24fd45bfd87075ecf4048c40feb9b3abe0a503410b708138a6702"
+  },
+  "plot_requested_task_matrices.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "evaluate_requested_tasks.py",
+      "medcpt_local.py"
+    ],
+    "sha256": "7e2434fd77d2babbb16dcde6a58f9039368aedffe7f4e51ce086e0ab130767b6"
+  },
+  "prepare_diagnosis_splits.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "dataset_leakage.py",
+      "dedup_leakage.py",
+      "medcpt_local.py"
+    ],
+    "sha256": "44abaa277c3175985821b4d0da97fa16e39db38655ddb408dca9e68129923533"
+  },
+  "preview_dataset.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "evidence_rules.py",
+      "medcpt_local.py"
+    ],
+    "sha256": "6fa6b5e17a6b0c628641f04792b23567e019303e5e095334fa5a18c6e4f9bc00"
+  },
+  "review_links.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "collect.py",
+      "link_cases.py"
+    ],
+    "sha256": "267e63c091e97af9eba14b60723bc0eba3029d5363aa0ece69ce1d372364642b"
+  },
+  "run_collection_v3.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "acquire_screened.py",
+      "audit_licenses.py",
+      "collect.py",
+      "license_rules.py",
+      "link_cases.py",
+      "screen_fulltext.py"
+    ],
+    "sha256": "98f11391504dd21fb10df6b4254b4813b8fe8059a1e48bfc69d3e48c7ad805aa"
+  },
+  "run_deepseek.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "collect.py",
+      "extraction_format.py",
+      "link_cases.py"
+    ],
+    "sha256": "adb5c82e63db6c4d4da7642c25aebb3911095efb4d9150ae0197d36a8ce43024"
+  },
+  "run_deepseek_batch.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "collect.py",
+      "link_cases.py",
+      "run_deepseek.py"
+    ],
+    "sha256": "507071f768a89b6f89b965e4aa568f05c1883dd6d86cb68676f8c72a23f88302"
+  },
+  "screen.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "collect.py"
+    ],
+    "sha256": "fe538b285040dc9229f6bfc30039bb83e0c2f560c64679bb92df25a42307c707"
+  },
+  "screen_fulltext.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "collect.py",
+      "screen.py"
+    ],
+    "sha256": "a59c7aa66ef5a32dbf40dc4f55d797d2731a238c390ea8b7ae833d19610c0ff2"
+  },
+  "summarize_disease_pipeline_ci.py": {
+    "role": "entrypoint",
+    "dependencies": [
+      "summarize_pipeline_ci.py"
+    ],
+    "sha256": "c47c2a1b20273619daf201cc7829b11b30dfc950857808a464d0b9d5e6f3191b"
+  },
+  "summarize_pipeline_ci.py": {
+    "role": "internal_dependency",
+    "dependencies": [],
+    "sha256": "42d5a9e7e93efbee40f54b7c07e12d92bd2547caf8a7f9c7b69738fb8af23f5a"
+  },
+  "task_benchmark_suite.py": {
+    "role": "internal_dependency",
+    "dependencies": [
+      "dataset_leakage.py",
+      "dedup_leakage.py",
+      "evaluate_curation.py",
+      "medcpt_local.py"
+    ],
+    "sha256": "b2675950a0f64ea84a6d7ef0fb02c6688c05e977c04a47b791b3a8e042280a3b"
+  },
+  "test_acquire_screened.py": {
+    "role": "test",
+    "dependencies": [
+      "acquire_screened.py",
+      "run_deepseek_batch.py"
+    ],
+    "sha256": "de6c4cc8c26f3a617c16777e4a91b992ed0ea535ef1af570de48e2033cc8621c"
+  },
+  "test_audit_licenses.py": {
+    "role": "test",
+    "dependencies": [
+      "audit_licenses.py"
+    ],
+    "sha256": "1850c882c3858330be158fcef7f0ba836b763757f0d7d3864ad9af77281ed54c"
+  },
+  "test_caption_pilot.py": {
+    "role": "test",
+    "dependencies": [
+      "build_caption_pilot.py"
+    ],
+    "sha256": "99e9063e658ade8cebe342ccce2859f5b044ca05bc81e9a95a4d3c8f2388f7a1"
+  },
+  "test_collect.py": {
+    "role": "test",
+    "dependencies": [
+      "collect.py"
+    ],
+    "sha256": "4003d075643b6cbd2cadc9a2126e1e76cffc7fdd0dce489bbfd2b77a3bbd6c3b"
+  },
+  "test_collection_v3.py": {
+    "role": "test",
+    "dependencies": [
+      "license_rules.py",
+      "run_collection_v3.py"
+    ],
+    "sha256": "5d50ce0e398b95eb8d14931d68e966c8343362ccfeb71e3ceae6c8476b18be6d"
+  },
+  "test_dataset_leakage.py": {
+    "role": "test",
+    "dependencies": [
+      "dataset_leakage.py",
+      "dedup_leakage.py"
+    ],
+    "sha256": "0d69ceb545c0396e9526ec43662fe7d1b00b7d6ee2a1c2d2585ef097b9a385ac"
+  },
+  "test_deepseek_batch.py": {
+    "role": "test",
+    "dependencies": [
+      "run_deepseek_batch.py"
+    ],
+    "sha256": "60df9efbe7920f08c764c33437c7ac2e3ca6cf7c5c3ebd100313c6eed0c50e0c"
+  },
+  "test_evaluate_curation.py": {
+    "role": "test",
+    "dependencies": [
+      "evaluate_curation.py"
+    ],
+    "sha256": "fe6d7e369665c35e3c23cdf2491f80bb5d2f993db404da2f367550ec72c00f2e"
+  },
+  "test_evaluate_requested_tasks.py": {
+    "role": "test",
+    "dependencies": [
+      "evaluate_requested_tasks.py"
+    ],
+    "sha256": "1a652beb5ddfaaa4b473ebed7897a67b4ee5bcee4fb7571bac0ccc38036ad40f"
+  },
+  "test_evidence_rules.py": {
+    "role": "test",
+    "dependencies": [
+      "evidence_rules.py"
+    ],
+    "sha256": "ac6f0f70843c2d496362bc774a2278eea0e50e333c2d949e351c73ba4f823475"
+  },
+  "test_four_disease_eval.py": {
+    "role": "test",
+    "dependencies": [
+      "four_disease_eval.py"
+    ],
+    "sha256": "e2147c7ac6dac924924f50ef1be61a6b87f5bb0a5ea0904443295413c73246bd"
+  },
+  "test_global_three_disease_eval.py": {
+    "role": "test",
+    "dependencies": [
+      "global_three_disease_eval.py"
+    ],
+    "sha256": "e7bc73cc2906f8fb16aedce4bee133bad1bf670cf77445df6302e7d3331df380"
+  },
+  "test_inventory_dataset.py": {
+    "role": "test",
+    "dependencies": [
+      "inventory_dataset.py"
+    ],
+    "sha256": "ead2355589a14fea34940b21e53bc1d5678e369630478331447f395ff4f72823"
+  },
+  "test_link_cases.py": {
+    "role": "test",
+    "dependencies": [
+      "link_cases.py"
+    ],
+    "sha256": "a4355b96d923f9b735df46937510d26320304a255141a6a2c7461c8fd4f7d47e"
+  },
+  "test_medcpt_batch.py": {
+    "role": "test",
+    "dependencies": [
+      "medcpt_batch.py"
+    ],
+    "sha256": "bc84ab30ef46543e372359867c2e52bf84b86a97a6fce5f03be4cd75f9d84f16"
+  },
+  "test_medcpt_local.py": {
+    "role": "test",
+    "dependencies": [
+      "medcpt_local.py"
+    ],
+    "sha256": "8b20edc5f93bfc1db27a1160caa2b7974ac5b3a289780c0d03a58434f15d5393"
+  },
+  "test_medpix_glioma_eval.py": {
+    "role": "test",
+    "dependencies": [
+      "medpix_glioma_eval.py"
+    ],
+    "sha256": "f0a499195c01f6002cf69a4da88af04ebdd4f683b2e3852ad4e7c625f35618cb"
+  },
+  "test_orphadata_kg.py": {
+    "role": "test",
+    "dependencies": [
+      "orphadata_kg.py"
+    ],
+    "sha256": "a367b7b0ed749a358064ac9a1318310fa2f4563ae5756c81e5bc70ccd94ba25d"
+  },
+  "test_plot_article_flow.py": {
+    "role": "test",
+    "dependencies": [
+      "plot_article_flow.py"
+    ],
+    "sha256": "3a24300c2bd0c667a48d30fa8e831f5dc11cee7b5efdb5d955ab4bc11cec2531"
+  },
+  "test_plot_dataset_flow.py": {
+    "role": "test",
+    "dependencies": [
+      "plot_dataset_flow.py"
+    ],
+    "sha256": "8f20577e5eee35a6abf221f21f7075bea03bbe9b04f0f912f834124e9fb5f4fe"
+  },
+  "test_prepare_diagnosis_splits.py": {
+    "role": "test",
+    "dependencies": [
+      "prepare_diagnosis_splits.py"
+    ],
+    "sha256": "c9deb1ebaf6888b8d143bfc0284f91d05e5b6e3d9f3281c6b5ce18e6afe111da"
+  },
+  "test_preview_dataset.py": {
+    "role": "test",
+    "dependencies": [
+      "preview_dataset.py"
+    ],
+    "sha256": "7520dfc2e23ba45e8b24b7d88d4e5b3ce92622b6c8d09207e05e0c6c982eb170"
+  },
+  "test_review_links.py": {
+    "role": "test",
+    "dependencies": [
+      "review_links.py"
+    ],
+    "sha256": "0becd721fe1d40793a01736c5f7e169eb2cb009fe93a5bc831a1eae7190f0b11"
+  },
+  "test_run_deepseek.py": {
+    "role": "test",
+    "dependencies": [
+      "run_deepseek.py"
+    ],
+    "sha256": "a9f9f54eff02da81898cd832323e1ff2b6a64cd86b7703353aaeccd79b12bdcb"
+  },
+  "test_screen.py": {
+    "role": "test",
+    "dependencies": [
+      "screen.py"
+    ],
+    "sha256": "9507293551fede0227bfb778858faab359fd50842764966a89af890121430b03"
+  },
+  "test_screen_fulltext.py": {
+    "role": "test",
+    "dependencies": [
+      "screen_fulltext.py"
+    ],
+    "sha256": "f71251fa620f900ad0d3a45ac47efaef5d33922bde911e1ddc6accdfb226bdbf"
+  },
+  "test_task_benchmark_suite.py": {
+    "role": "test",
+    "dependencies": [
+      "task_benchmark_suite.py"
+    ],
+    "sha256": "e9a130cce535d6f7be3d4b9cb63f0254ace1f87d9e256e3a7bfc1a80e104cc95"
+  }
+}

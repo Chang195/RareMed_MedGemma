@@ -1,0 +1,26 @@
+{
+  "version": "caption-pilot-v0.1",
+  "purpose": "format_and_image_loading_smoke_test_only",
+  "question": "Describe the source-reported imaging finding in this annotated brain MRI image.",
+  "include": [
+    {
+      "sample_id": "PMC12675991_FIG2",
+      "target_passage_id": "p0014",
+      "target_text": "Axial MRI brain DWI demonstrating an acute infarct (red arrow)",
+      "selection_note": "Single image; exact figure caption used unchanged. Arrow retained. No independent clinical validation."
+    },
+    {
+      "sample_id": "PMC12675991_FIG3",
+      "target_passage_id": "p0017",
+      "target_text": "axial MRI brain ADC confirming an acute right frontal lobe infarct (red arrow)",
+      "selection_note": "Contiguous caption substring; excludes the cross-image phrase 'Corresponding lesion shown on'. Arrow retained. No independent clinical validation."
+    }
+  ],
+  "hold": [
+    {"sample_id": "PMC13155202_F1", "reason": "multi_panel_and_nonvisual_time_context_in_caption"},
+    {"sample_id": "PMC13155202_F2", "reason": "serial_multi_panel_comparison_needs_task_design"},
+    {"sample_id": "PMC12675991_FIG4", "reason": "caption_is_interpretive_diagnosis_not_a_specific_visual_description"},
+    {"sample_id": "PMC12883378_fig1", "reason": "multi_panel_multi_sequence_attribution_needed"},
+    {"sample_id": "PMC13083007_F1", "reason": "serial_multi_panel_comparison_needs_task_design"}
+  ]
+}

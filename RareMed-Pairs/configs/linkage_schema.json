@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source-reported case diagnosis and figure linkage",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["article_id", "figures"],
+  "properties": {
+    "article_id": {"type": "string"},
+    "figures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["figure_id", "case_label", "link_status", "diagnosis_name", "diagnosis_status", "diagnosis_basis", "link_evidence", "diagnosis_evidence", "basis_evidence", "uncertainties"],
+        "properties": {
+          "figure_id": {"type": "string"},
+          "case_label": {"type": ["string", "null"]},
+          "link_status": {"enum": ["explicit", "contextual", "unresolved", "multiple_cases"]},
+          "diagnosis_name": {"type": ["string", "null"]},
+          "diagnosis_status": {"enum": ["author_reported_confirmed", "suspected", "differential", "excluded", "unclear"]},
+          "diagnosis_basis": {"type": ["string", "null"]},
+          "link_evidence": {"$ref": "#/$defs/evidence_list"},
+          "diagnosis_evidence": {"$ref": "#/$defs/evidence_list"},
+          "basis_evidence": {"$ref": "#/$defs/evidence_list"},
+          "uncertainties": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "evidence_list": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["passage_id", "quote"],
+        "properties": {
+          "passage_id": {"type": "string"},
+          "quote": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

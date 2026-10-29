@@ -1,0 +1,5 @@
+# Versions used for collection, curation, scoring and plotting. No model training.
+numpy==1.26.4
+Pillow==10.3.0
+pyarrow==14.0.2
+matplotlib==3.8.4

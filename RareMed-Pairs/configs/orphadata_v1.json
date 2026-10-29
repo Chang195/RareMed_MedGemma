@@ -1,0 +1,9 @@
+{
+  "schema_version": "orphadata-subgraph-v1",
+  "default_query": "CADASIL",
+  "sources": {
+    "phenotypes": {"url": "https://www.orphadata.com/data/xml/en_product4.xml", "page": "https://sciences.orphadata.com/phenotypes/", "file": "en_product4.xml"},
+    "genes": {"url": "https://www.orphadata.com/data/xml/en_product6.xml", "page": "https://sciences.orphadata.com/genes/", "file": "en_product6.xml"},
+    "natural_history": {"url": "https://www.orphadata.com/data/xml/en_product9_ages.xml", "page": "https://sciences.orphadata.com/natural-history/", "file": "en_product9_ages.xml"}
+  }
+}

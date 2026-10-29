@@ -1,0 +1,25 @@
+name: Code checks
+on: [push, pull_request]
+jobs:
+  adapters:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install Pillow==12.0.0
+      - run: python -m compileall -q MedGemma RareMed-Pairs
+      - run: python -m unittest test_pmc_cloud_images.py test_pipeline_runtime_repair.py -v
+        working-directory: MedGemma
+  original-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+        working-directory: RareMed-Pairs
+      - run: python tools/run_tests.py
+        working-directory: RareMed-Pairs

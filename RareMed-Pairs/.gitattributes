@@ -1,0 +1,5 @@
+# Preserve exact source bytes: frozen plans and API caches use file SHA-256.
+# Python supports these UTF-8 files on Windows/Linux without EOL rewriting.
+* -text
+*.png binary
+*.zip binary

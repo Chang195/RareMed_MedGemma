@@ -1,0 +1,5 @@
+{
+  "sample_ids": ["PMC12675991_FIG2", "PMC12675991_FIG3"],
+  "article_ids": ["PMC12675991"],
+  "reason": "User reported completing QLoRA smoke testing on caption-pilot-v0.1; keep their entire connected source group out of validation/test."
+}

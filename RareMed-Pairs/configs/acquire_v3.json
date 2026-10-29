@@ -1,0 +1,7 @@
+{
+  "run_id": "collection_v3",
+  "screened_manifest": "data/manifests/brain_mri_fulltext_v3.jsonl",
+  "queues": ["fulltext_passed"],
+  "max_articles": 1000,
+  "license_policy": "exclude_by_nc_nd"
+}

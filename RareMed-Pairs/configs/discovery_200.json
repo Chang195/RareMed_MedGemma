@@ -1,0 +1,9 @@
+{
+  "run_id": "brain_mri_discovery_200",
+  "queries": [
+    "(CADASIL OR \"sporadic cerebral small vessel disease\") AND (MRI OR \"magnetic resonance\") AND OPEN_ACCESS:Y"
+  ],
+  "page_size": 200,
+  "max_articles": 0,
+  "note": "Retrieve up to 200 candidate publications. Eligibility, image availability and case independence require subsequent review."
+}

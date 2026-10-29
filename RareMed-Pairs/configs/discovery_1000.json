@@ -1,0 +1,7 @@
+{
+  "run_id": "brain_mri_discovery_1000",
+  "queries": ["(CADASIL OR \"sporadic cerebral small vessel disease\") AND (MRI OR \"magnetic resonance\") AND OPEN_ACCESS:Y"],
+  "page_size": 1000,
+  "max_articles": 0,
+  "note": "Expand result count within the same disease scope. One bounded search page; not a systematic review. No paid model calls."
+}

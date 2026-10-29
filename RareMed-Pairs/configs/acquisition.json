@@ -1,0 +1,7 @@
+{
+  "run_id": "acquisition_smoke",
+  "queries": ["EXT_ID:39507177 AND SRC:MED"],
+  "page_size": 5,
+  "max_articles": 1,
+  "note": "First validate the existing case end-to-end. This identity query is a regression check, not topic discovery."
+}

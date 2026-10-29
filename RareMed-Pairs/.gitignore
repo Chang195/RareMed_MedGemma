@@ -1,0 +1,42 @@
+# Private/re-downloadable datasets, model outputs, images and weights
+/data/
+/reports/
+/models/
+/output/
+/archives/
+/RareMed_CADASIL_Independent_Test*/
+/RareMed_CADASIL_SFT_Mixture_Experiments/inputs/
+/RareMed_CADASIL_SFT_Mixture_Experiments/images/
+/RareMed_CADASIL_SFT_Mixture_Experiments/dataset_*/
+/RareMed_CADASIL_SFT_Mixture_Experiments/manifests/
+/RareMed_CADASIL_SFT_Mixture_Experiments/composition.*
+/RareMed_CADASIL_SFT_Mixture_Experiments/audit*.md
+/metadata/cleanup_summary.json
+/metadata/local_preservation_check.json
+/assets/*.js
+# Environments, caches and generated builds
+.venv*/
+.cache/
+.runtime_tmp/
+.chart-data-*/
+.slide-build/
+.release-stage/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+*.part
+*.tmp
+*.log
+*.zip
+*.zip.sha256
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*

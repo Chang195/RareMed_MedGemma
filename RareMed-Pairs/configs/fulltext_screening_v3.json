@@ -1,0 +1,4 @@
+{
+  "run_id": "brain_mri_fulltext_v3",
+  "metadata_manifest": "data/manifests/brain_mri_all_candidates_v3.jsonl"
+}

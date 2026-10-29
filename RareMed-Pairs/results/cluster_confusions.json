@@ -1,0 +1,2087 @@
+{
+  "seed": 20261027,
+  "bootstrap_replicates": 5000,
+  "confidence_level": 0.95,
+  "vector_order": [
+    "TP",
+    "FP",
+    "FN",
+    "TN"
+  ],
+  "privacy": "Aggregate unique confusion vectors and multiplicities only; no source case IDs or text.",
+  "rows": [
+    {
+      "disease": "GBM",
+      "task": "Case association",
+      "dataset": "MultiCaRe",
+      "n": 1152,
+      "unit": "figures",
+      "clusters": 382,
+      "reference": "Source image-case identifiers",
+      "details": "Same frozen edge scoring; disease strata as original report.",
+      "new_manual_review": 0,
+      "confusion": [
+        1113,
+        12,
+        63,
+        357
+      ],
+      "metrics": {
+        "Precision": {
+          "value": 0.9893333333333333,
+          "low": 0.9779929577464789,
+          "high": 0.99812734082397
+        },
+        "Recall": {
+          "value": 0.9464285714285714,
+          "low": 0.9214787073781775,
+          "high": 0.9681748701667333
+        },
+        "F1": {
+          "value": 0.9674054758800521,
+          "low": 0.9525011871483353,
+          "high": 0.9800447221890355
+        }
+      },
+      "patterns_TP_FP_FN_TN": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          4
+        ],
+        [
+          0,
+          0,
+          6,
+          6
+        ],
+        [
+          0,
+          0,
+          7,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          2,
+          4
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          6
+        ],
+        [
+          2,
+          0,
+          0,
+          8
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          11
+        ],
+        [
+          2,
+          0,
+          2,
+          2
+        ],
+        [
+          2,
+          0,
+          3,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          0,
+          6
+        ],
+        [
+          3,
+          0,
+          0,
+          9
+        ],
+        [
+          3,
+          0,
+          1,
+          5
+        ],
+        [
+          3,
+          0,
+          2,
+          3
+        ],
+        [
+          3,
+          0,
+          5,
+          17
+        ],
+        [
+          3,
+          5,
+          1,
+          12
+        ],
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          4
+        ],
+        [
+          4,
+          0,
+          0,
+          12
+        ],
+        [
+          4,
+          0,
+          1,
+          7
+        ],
+        [
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0,
+          5
+        ],
+        [
+          5,
+          0,
+          0,
+          10
+        ],
+        [
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          1,
+          5
+        ],
+        [
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          0,
+          7
+        ],
+        [
+          7,
+          0,
+          0,
+          42
+        ],
+        [
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0,
+          8
+        ],
+        [
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0,
+          50
+        ],
+        [
+          12,
+          0,
+          0,
+          0
+        ]
+      ],
+      "cluster_multiplicities": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        47,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        94,
+        10,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        82,
+        2,
+        3,
+        2,
+        1,
+        1,
+        1,
+        1,
+        56,
+        2,
+        1,
+        1,
+        23,
+        2,
+        1,
+        8,
+        1,
+        4,
+        1,
+        2,
+        3,
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "disease": "GBM",
+      "task": "Case association",
+      "dataset": "MedPix2",
+      "n": 17,
+      "unit": "figures",
+      "clusters": 5,
+      "reference": "Source image-case identifiers",
+      "details": "Same frozen edge scoring; disease strata as original report.",
+      "new_manual_review": 0,
+      "confusion": [
+        17,
+        0,
+        0,
+        34
+      ],
+      "metrics": {
+        "Precision": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        },
+        "Recall": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        },
+        "F1": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        }
+      },
+      "patterns_TP_FP_FN_TN": [
+        [
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          3,
+          0,
+          0,
+          6
+        ],
+        [
+          5,
+          0,
+          0,
+          10
+        ]
+      ],
+      "cluster_multiplicities": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "disease": "GBM",
+      "task": "Original description",
+      "dataset": "MultiCaRe",
+      "n": 1152,
+      "unit": "figures",
+      "clusters": 382,
+      "reference": "Source per-image caption",
+      "details": "Normalized exact caption association. MedPix import integrity only.",
+      "new_manual_review": 0,
+      "confusion": [
+        892,
+        260,
+        260,
+        3393
+      ],
+      "metrics": {
+        "Precision": {
+          "value": 0.7743055555555556,
+          "low": 0.7373548876072168,
+          "high": 0.8091302501502485
+        },
+        "Recall": {
+          "value": 0.7743055555555556,
+          "low": 0.7373548876072168,
+          "high": 0.8091302501502485
+        },
+        "F1": {
+          "value": 0.7743055555555556,
+          "low": 0.7373548876072168,
+          "high": 0.8091302501502485
+        }
+      },
+      "patterns_TP_FP_FN_TN": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          3,
+          6
+        ],
+        [
+          0,
+          4,
+          4,
+          12
+        ],
+        [
+          0,
+          5,
+          5,
+          20
+        ],
+        [
+          0,
+          6,
+          6,
+          30
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2,
+          6
+        ],
+        [
+          1,
+          3,
+          3,
+          12
+        ],
+        [
+          1,
+          4,
+          4,
+          20
+        ],
+        [
+          1,
+          5,
+          5,
+          30
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          6
+        ],
+        [
+          2,
+          2,
+          2,
+          12
+        ],
+        [
+          2,
+          3,
+          3,
+          20
+        ],
+        [
+          2,
+          5,
+          5,
+          42
+        ],
+        [
+          3,
+          0,
+          0,
+          6
+        ],
+        [
+          3,
+          1,
+          1,
+          12
+        ],
+        [
+          3,
+          2,
+          2,
+          20
+        ],
+        [
+          4,
+          0,
+          0,
+          12
+        ],
+        [
+          4,
+          1,
+          1,
+          20
+        ],
+        [
+          4,
+          2,
+          2,
+          30
+        ],
+        [
+          4,
+          4,
+          4,
+          56
+        ],
+        [
+          4,
+          5,
+          5,
+          72
+        ],
+        [
+          5,
+          0,
+          0,
+          15
+        ],
+        [
+          5,
+          0,
+          0,
+          20
+        ],
+        [
+          6,
+          0,
+          0,
+          30
+        ],
+        [
+          6,
+          1,
+          1,
+          42
+        ],
+        [
+          6,
+          3,
+          3,
+          72
+        ],
+        [
+          7,
+          0,
+          0,
+          42
+        ],
+        [
+          7,
+          1,
+          1,
+          56
+        ],
+        [
+          8,
+          0,
+          0,
+          56
+        ],
+        [
+          9,
+          0,
+          0,
+          72
+        ],
+        [
+          10,
+          0,
+          0,
+          90
+        ],
+        [
+          10,
+          2,
+          2,
+          132
+        ]
+      ],
+      "cluster_multiplicities": [
+        15,
+        14,
+        9,
+        1,
+        3,
+        1,
+        45,
+        31,
+        8,
+        3,
+        2,
+        1,
+        2,
+        62,
+        26,
+        7,
+        1,
+        1,
+        52,
+        18,
+        4,
+        34,
+        4,
+        1,
+        1,
+        1,
+        1,
+        13,
+        7,
+        1,
+        1,
+        6,
+        1,
+        2,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "disease": "GBM",
+      "task": "Original description",
+      "dataset": "MedPix2",
+      "n": 18,
+      "unit": "figures",
+      "clusters": 5,
+      "reference": "Source per-image caption",
+      "details": "Normalized exact caption association. MedPix import integrity only.",
+      "new_manual_review": 0,
+      "confusion": [
+        18,
+        0,
+        0,
+        18
+      ],
+      "metrics": {
+        "Precision": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        },
+        "Recall": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        },
+        "F1": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        }
+      },
+      "patterns_TP_FP_FN_TN": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          8
+        ],
+        [
+          5,
+          0,
+          0,
+          5
+        ]
+      ],
+      "cluster_multiplicities": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "disease": "GBM",
+      "task": "Diagnosis extraction",
+      "dataset": "MedPix2",
+      "n": 115,
+      "unit": "figures",
+      "clusters": 32,
+      "reference": "Source Case Diagnosis",
+      "details": "One-vs-rest on ALL 115 diagnosis references; not a positive-only micro average.",
+      "new_manual_review": 0,
+      "confusion": [
+        17,
+        0,
+        0,
+        98
+      ],
+      "metrics": {
+        "Precision": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        },
+        "Recall": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        },
+        "F1": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        }
+      },
+      "positive": 17,
+      "patterns_TP_FP_FN_TN": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          0,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          9
+        ],
+        [
+          0,
+          0,
+          0,
+          11
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0,
+          0
+        ]
+      ],
+      "cluster_multiplicities": [
+        7,
+        5,
+        4,
+        2,
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "disease": "Astrocytoma",
+      "task": "Case association",
+      "dataset": "MultiCaRe",
+      "n": 679,
+      "unit": "figures",
+      "clusters": 198,
+      "reference": "Source image-case identifiers",
+      "details": "Same frozen edge scoring; disease strata as original report.",
+      "new_manual_review": 0,
+      "confusion": [
+        653,
+        11,
+        45,
+        268
+      ],
+      "metrics": {
+        "Precision": {
+          "value": 0.983433734939759,
+          "low": 0.9689807976366323,
+          "high": 0.9951298701298701
+        },
+        "Recall": {
+          "value": 0.9355300859598854,
+          "low": 0.9005580668286272,
+          "high": 0.9658008833997678
+        },
+        "F1": {
+          "value": 0.9588839941262849,
+          "low": 0.9386527557808045,
+          "high": 0.97677961936488
+        }
+      },
+      "patterns_TP_FP_FN_TN": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          0,
+          3,
+          2
+        ],
+        [
+          0,
+          0,
+          4,
+          4
+        ],
+        [
+          0,
+          0,
+          6,
+          6
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          6
+        ],
+        [
+          1,
+          0,
+          5,
+          8
+        ],
+        [
+          1,
+          1,
+          1,
+          11
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          6
+        ],
+        [
+          2,
+          0,
+          0,
+          8
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          2
+        ],
+        [
+          2,
+          0,
+          4,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          0,
+          6
+        ],
+        [
+          3,
+          0,
+          1,
+          5
+        ],
+        [
+          3,
+          1,
+          1,
+          3
+        ],
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          4
+        ],
+        [
+          4,
+          0,
+          0,
+          8
+        ],
+        [
+          4,
+          2,
+          2,
+          16
+        ],
+        [
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0,
+          5
+        ],
+        [
+          5,
+          3,
+          0,
+          12
+        ],
+        [
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          0,
+          42
+        ],
+        [
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          1,
+          1,
+          8
+        ],
+        [
+          9,
+          0,
+          0,
+          0
+        ],
+        [
+          11,
+          0,
+          4,
+          18
+        ],
+        [
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          0,
+          24
+        ],
+        [
+          15,
+          0,
+          0,
+          0
+        ]
+      ],
+      "cluster_multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        14,
+        1,
+        1,
+        1,
+        1,
+        38,
+        7,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        48,
+        3,
+        4,
+        1,
+        1,
+        24,
+        2,
+        1,
+        1,
+        13,
+        3,
+        1,
+        7,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "disease": "Astrocytoma",
+      "task": "Case association",
+      "dataset": "MedPix2",
+      "n": 15,
+      "unit": "figures",
+      "clusters": 7,
+      "reference": "Source image-case identifiers",
+      "details": "Same frozen edge scoring; disease strata as original report.",
+      "new_manual_review": 0,
+      "confusion": [
+        14,
+        0,
+        1,
+        30
+      ],
+      "metrics": {
+        "Precision": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        },
+        "Recall": {
+          "value": 0.9333333333333333,
+          "low": 0.7272727272727273,
+          "high": 1.0
+        },
+        "F1": {
+          "value": 0.9655172413793104,
+          "low": 0.8421052631578947,
+          "high": 1.0
+        }
+      },
+      "patterns_TP_FP_FN_TN": [
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          4
+        ],
+        [
+          3,
+          0,
+          0,
+          6
+        ],
+        [
+          4,
+          0,
+          0,
+          8
+        ]
+      ],
+      "cluster_multiplicities": [
+        1,
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "disease": "Astrocytoma",
+      "task": "Original description",
+      "dataset": "MultiCaRe",
+      "n": 658,
+      "unit": "figures",
+      "clusters": 194,
+      "reference": "Source per-image caption",
+      "details": "Normalized exact caption association. MedPix import integrity only.",
+      "new_manual_review": 0,
+      "confusion": [
+        526,
+        132,
+        132,
+        2390
+      ],
+      "metrics": {
+        "Precision": {
+          "value": 0.7993920972644377,
+          "low": 0.7485531143669697,
+          "high": 0.8463973904196227
+        },
+        "Recall": {
+          "value": 0.7993920972644377,
+          "low": 0.7485531143669697,
+          "high": 0.8463973904196227
+        },
+        "F1": {
+          "value": 0.7993920972644377,
+          "low": 0.7485531143669697,
+          "high": 0.8463973904196227
+        }
+      },
+      "patterns_TP_FP_FN_TN": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          3,
+          6
+        ],
+        [
+          0,
+          4,
+          4,
+          12
+        ],
+        [
+          0,
+          5,
+          5,
+          20
+        ],
+        [
+          0,
+          8,
+          8,
+          56
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2,
+          6
+        ],
+        [
+          1,
+          5,
+          5,
+          30
+        ],
+        [
+          1,
+          6,
+          6,
+          42
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          6
+        ],
+        [
+          2,
+          3,
+          3,
+          20
+        ],
+        [
+          3,
+          0,
+          0,
+          6
+        ],
+        [
+          3,
+          1,
+          1,
+          12
+        ],
+        [
+          3,
+          2,
+          2,
+          20
+        ],
+        [
+          3,
+          3,
+          3,
+          30
+        ],
+        [
+          4,
+          0,
+          0,
+          12
+        ],
+        [
+          4,
+          1,
+          1,
+          20
+        ],
+        [
+          4,
+          2,
+          2,
+          30
+        ],
+        [
+          5,
+          0,
+          0,
+          20
+        ],
+        [
+          5,
+          1,
+          1,
+          30
+        ],
+        [
+          6,
+          0,
+          0,
+          30
+        ],
+        [
+          6,
+          1,
+          1,
+          42
+        ],
+        [
+          6,
+          9,
+          9,
+          210
+        ],
+        [
+          7,
+          0,
+          0,
+          42
+        ],
+        [
+          8,
+          0,
+          0,
+          56
+        ],
+        [
+          8,
+          1,
+          1,
+          72
+        ],
+        [
+          8,
+          3,
+          3,
+          110
+        ],
+        [
+          9,
+          0,
+          0,
+          72
+        ],
+        [
+          10,
+          2,
+          2,
+          132
+        ],
+        [
+          12,
+          0,
+          0,
+          132
+        ]
+      ],
+      "cluster_multiplicities": [
+        5,
+        5,
+        1,
+        1,
+        2,
+        1,
+        13,
+        21,
+        5,
+        1,
+        1,
+        1,
+        23,
+        15,
+        1,
+        38,
+        4,
+        1,
+        1,
+        28,
+        4,
+        1,
+        6,
+        1,
+        4,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "disease": "Astrocytoma",
+      "task": "Original description",
+      "dataset": "MedPix2",
+      "n": 19,
+      "unit": "figures",
+      "clusters": 9,
+      "reference": "Source per-image caption",
+      "details": "Normalized exact caption association. MedPix import integrity only.",
+      "new_manual_review": 0,
+      "confusion": [
+        19,
+        0,
+        0,
+        39
+      ],
+      "metrics": {
+        "Precision": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        },
+        "Recall": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        },
+        "F1": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        }
+      },
+      "patterns_TP_FP_FN_TN": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0,
+          30
+        ]
+      ],
+      "cluster_multiplicities": [
+        1,
+        3,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "disease": "Astrocytoma",
+      "task": "Diagnosis extraction",
+      "dataset": "MedPix2",
+      "n": 115,
+      "unit": "figures",
+      "clusters": 32,
+      "reference": "Source Case Diagnosis",
+      "details": "One-vs-rest on ALL 115 diagnosis references; not a positive-only micro average.",
+      "new_manual_review": 0,
+      "confusion": [
+        14,
+        0,
+        1,
+        100
+      ],
+      "metrics": {
+        "Precision": {
+          "value": 1.0,
+          "low": 1.0,
+          "high": 1.0
+        },
+        "Recall": {
+          "value": 0.9333333333333333,
+          "low": 0.7142857142857143,
+          "high": 1.0
+        },
+        "F1": {
+          "value": 0.9655172413793104,
+          "low": 0.8333333333333334,
+          "high": 1.0
+        }
+      },
+      "positive": 15,
+      "patterns_TP_FP_FN_TN": [
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          0,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          9
+        ],
+        [
+          0,
+          0,
+          0,
+          11
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0
+        ]
+      ],
+      "cluster_multiplicities": [
+        6,
+        2,
+        5,
+        1,
+        6,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "disease": "CADASIL",
+      "task": "Case association",
+      "dataset": "MultiCaRe",
+      "n": 31,
+      "unit": "figures",
+      "clusters": 13,
+      "reference": "Source image-case identifiers",
+      "details": "Same frozen edge scoring; disease strata as original report.",
+      "new_manual_review": 0,
+      "confusion": [
+        23,
+        1,
+        30,
+        72
+      ],
+      "metrics": {
+        "Precision": {
+          "value": 0.9583333333333334,
+          "low": 0.875,
+          "high": 1.0
+        },
+        "Recall": {
+          "value": 0.4339622641509434,
+          "low": 0.2087543554006969,
+          "high": 0.8387096774193549
+        },
+        "F1": {
+          "value": 0.5974025974025974,
+          "low": 0.3428442728442729,
+          "high": 0.896551724137931
+        }
+      },
+      "patterns_TP_FP_FN_TN": [
+        [
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          16,
+          48
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          8
+        ],
+        [
+          2,
+          1,
+          0,
+          9
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          3,
+          6
+        ],
+        [
+          3,
+          0,
+          5,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          0
+        ]
+      ],
+      "cluster_multiplicities": [
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "disease": "CADASIL",
+      "task": "Case association",
+      "dataset": "MedPix2",
+      "n": 0,
+      "positive": 0,
+      "clusters": 0,
+      "new_manual_review": 0,
+      "metrics": null,
+      "reason": "No eligible source records"
+    },
+    {
+      "disease": "CADASIL",
+      "task": "Original description",
+      "dataset": "MultiCaRe",
+      "n": 31,
+      "unit": "figures",
+      "clusters": 13,
+      "reference": "Source per-image caption",
+      "details": "Normalized exact caption association. MedPix import integrity only.",
+      "new_manual_review": 0,
+      "confusion": [
+        26,
+        5,
+        5,
+        62
+      ],
+      "metrics": {
+        "Precision": {
+          "value": 0.8387096774193549,
+          "low": 0.6764705882352942,
+          "high": 0.9655459770114939
+        },
+        "Recall": {
+          "value": 0.8387096774193549,
+          "low": 0.6764705882352942,
+          "high": 0.9655459770114939
+        },
+        "F1": {
+          "value": 0.8387096774193549,
+          "low": 0.6764705882352942,
+          "high": 0.9655459770114939
+        }
+      },
+      "patterns_TP_FP_FN_TN": [
+        [
+          0,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          3,
+          0,
+          0,
+          6
+        ],
+        [
+          3,
+          1,
+          1,
+          12
+        ],
+        [
+          4,
+          0,
+          0,
+          12
+        ]
+      ],
+      "cluster_multiplicities": [
+        1,
+        4,
+        1,
+        2,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "disease": "CADASIL",
+      "task": "Original description",
+      "dataset": "MedPix2",
+      "n": 0,
+      "positive": 0,
+      "clusters": 0,
+      "new_manual_review": 0,
+      "metrics": null,
+      "reason": "No eligible source records"
+    },
+    {
+      "disease": "CADASIL",
+      "task": "Diagnosis extraction",
+      "dataset": "MedPix2",
+      "n": 115,
+      "positive": 0,
+      "clusters": 0,
+      "new_manual_review": 0,
+      "metrics": null,
+      "reason": "No positive source references"
+    }
+  ]
+}

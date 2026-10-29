@@ -1,0 +1,46 @@
+﻿disease,task,dataset,n,clusters,positive,metric,estimate,ci_low,ci_high,status
+GBM,Case association,MultiCaRe,1152,382,,Precision,0.9893333333333333,0.9779929577464789,0.99812734082397,scored
+GBM,Case association,MultiCaRe,1152,382,,Recall,0.9464285714285714,0.9214787073781775,0.9681748701667333,scored
+GBM,Case association,MultiCaRe,1152,382,,F1,0.9674054758800521,0.9525011871483353,0.9800447221890355,scored
+GBM,Case association,MedPix2,17,5,,Precision,1.0,1.0,1.0,scored
+GBM,Case association,MedPix2,17,5,,Recall,1.0,1.0,1.0,scored
+GBM,Case association,MedPix2,17,5,,F1,1.0,1.0,1.0,scored
+GBM,Original description,MultiCaRe,1152,382,,Precision,0.7743055555555556,0.7373548876072168,0.8091302501502485,scored
+GBM,Original description,MultiCaRe,1152,382,,Recall,0.7743055555555556,0.7373548876072168,0.8091302501502485,scored
+GBM,Original description,MultiCaRe,1152,382,,F1,0.7743055555555556,0.7373548876072168,0.8091302501502485,scored
+GBM,Original description,MedPix2,18,5,,Precision,1.0,1.0,1.0,scored
+GBM,Original description,MedPix2,18,5,,Recall,1.0,1.0,1.0,scored
+GBM,Original description,MedPix2,18,5,,F1,1.0,1.0,1.0,scored
+GBM,Diagnosis extraction,MedPix2,115,32,17,Precision,1.0,1.0,1.0,scored
+GBM,Diagnosis extraction,MedPix2,115,32,17,Recall,1.0,1.0,1.0,scored
+GBM,Diagnosis extraction,MedPix2,115,32,17,F1,1.0,1.0,1.0,scored
+Astrocytoma,Case association,MultiCaRe,679,198,,Precision,0.983433734939759,0.9689807976366323,0.9951298701298701,scored
+Astrocytoma,Case association,MultiCaRe,679,198,,Recall,0.9355300859598854,0.9005580668286272,0.9658008833997678,scored
+Astrocytoma,Case association,MultiCaRe,679,198,,F1,0.9588839941262849,0.9386527557808045,0.97677961936488,scored
+Astrocytoma,Case association,MedPix2,15,7,,Precision,1.0,1.0,1.0,scored
+Astrocytoma,Case association,MedPix2,15,7,,Recall,0.9333333333333333,0.7272727272727273,1.0,scored
+Astrocytoma,Case association,MedPix2,15,7,,F1,0.9655172413793104,0.8421052631578947,1.0,scored
+Astrocytoma,Original description,MultiCaRe,658,194,,Precision,0.7993920972644377,0.7485531143669697,0.8463973904196227,scored
+Astrocytoma,Original description,MultiCaRe,658,194,,Recall,0.7993920972644377,0.7485531143669697,0.8463973904196227,scored
+Astrocytoma,Original description,MultiCaRe,658,194,,F1,0.7993920972644377,0.7485531143669697,0.8463973904196227,scored
+Astrocytoma,Original description,MedPix2,19,9,,Precision,1.0,1.0,1.0,scored
+Astrocytoma,Original description,MedPix2,19,9,,Recall,1.0,1.0,1.0,scored
+Astrocytoma,Original description,MedPix2,19,9,,F1,1.0,1.0,1.0,scored
+Astrocytoma,Diagnosis extraction,MedPix2,115,32,15,Precision,1.0,1.0,1.0,scored
+Astrocytoma,Diagnosis extraction,MedPix2,115,32,15,Recall,0.9333333333333333,0.7142857142857143,1.0,scored
+Astrocytoma,Diagnosis extraction,MedPix2,115,32,15,F1,0.9655172413793104,0.8333333333333334,1.0,scored
+CADASIL,Case association,MultiCaRe,31,13,,Precision,0.9583333333333334,0.875,1.0,scored
+CADASIL,Case association,MultiCaRe,31,13,,Recall,0.4339622641509434,0.2087543554006969,0.8387096774193549,scored
+CADASIL,Case association,MultiCaRe,31,13,,F1,0.5974025974025974,0.3428442728442729,0.896551724137931,scored
+CADASIL,Case association,MedPix2,0,0,0,Precision,,,,No eligible source records
+CADASIL,Case association,MedPix2,0,0,0,Recall,,,,No eligible source records
+CADASIL,Case association,MedPix2,0,0,0,F1,,,,No eligible source records
+CADASIL,Original description,MultiCaRe,31,13,,Precision,0.8387096774193549,0.6764705882352942,0.9655459770114939,scored
+CADASIL,Original description,MultiCaRe,31,13,,Recall,0.8387096774193549,0.6764705882352942,0.9655459770114939,scored
+CADASIL,Original description,MultiCaRe,31,13,,F1,0.8387096774193549,0.6764705882352942,0.9655459770114939,scored
+CADASIL,Original description,MedPix2,0,0,0,Precision,,,,No eligible source records
+CADASIL,Original description,MedPix2,0,0,0,Recall,,,,No eligible source records
+CADASIL,Original description,MedPix2,0,0,0,F1,,,,No eligible source records
+CADASIL,Diagnosis extraction,MedPix2,115,0,0,Precision,,,,No positive source references
+CADASIL,Diagnosis extraction,MedPix2,115,0,0,Recall,,,,No positive source references
+CADASIL,Diagnosis extraction,MedPix2,115,0,0,F1,,,,No positive source references
